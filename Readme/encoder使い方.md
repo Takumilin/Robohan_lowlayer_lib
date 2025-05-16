@@ -1,4 +1,4 @@
-# encoder.hの使用方法
+# encoder.hおよびencoder.cの使用方法
 ### 1.ヘッダファイルのインクルード
 必ずmain.c内でヘッダファイルをインクルードしよう
 ```
@@ -47,3 +47,5 @@ __HAL_TIM_SET_COUNTER(htim,4294967295/2);でタイマの中央値にカウント
 void cnt_convert(encod* encod, TIM_HandleTypeDef* htim)
 ```
 現在の時刻と過去の時刻のカウント値の差分を取って回転した角度とか角速度とかrpsを勝手に計算してくれます．
+
+**サンプルプログラムはまたアップすると思います．**
